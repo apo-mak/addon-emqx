@@ -10,4 +10,6 @@ mkdir -p \
   /data/emqx/plugins
 
 ln -s /data/emqx/log /opt/emqx/log
-ln -s /etc/certs/ /ssl
+ln -s /etc/certs/cert.pem /ssl/$(bashio::config 'certfile')
+ln -s /etc/certs/key.pem /ssl/$(bashio::config 'keyfile')
+ln -s /etc/certs/cacert.pem /ssl/$(bashio::config 'certfile')
