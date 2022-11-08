@@ -10,3 +10,4 @@ mkdir -p \
   /data/emqx/plugins
 
 ln -s /data/emqx/log /opt/emqx/log
+ln -s /etc/certs/ /ssl
