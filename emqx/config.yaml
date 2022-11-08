@@ -10,6 +10,9 @@ ingress: true
 ingress_port: 18083
 ingress_stream: true
 init: false
+map:
+  - ssl:rw
+  - share
 panel_icon: mdi:pipe
 panel_title: EMQX
 arch:
@@ -18,6 +21,8 @@ arch:
 map:
   - ssl
 options:
+  keyfile: privkey.pem
+  certfile: fullchain.pem
   env_vars: []
 host_network: true
 schema:
